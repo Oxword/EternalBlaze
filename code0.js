@@ -153,20 +153,56 @@ isConditionTrue_0 = false;
 {isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(0).getAsString() == "ok");
 }
 if (isConditionTrue_0) {
+{gdjs.evtTools.firebaseTools.firestore.hasDocument("Players", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), runtimeScene.getScene().getVariables().getFromIndex(4), runtimeScene.getScene().getVariables().getFromIndex(5));
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(5).getAsString() == "ok");
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = !runtimeScene.getScene().getVariables().getFromIndex(4).getAsBoolean();
+}
+}
+if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("ErrorText"), gdjs._1089_1090_1072_1088_1090_32_1089_1090_1088_1072_1085_1080_1094_1072Code.GDErrorTextObjects1);
 {runtimeScene.getScene().getVariables().getFromIndex(2).getChild("Gold").setNumber(0);
 }
-{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(1);
-}
-{runtimeScene.getScene().getVariables().getFromIndex(2).getChild("TimerValue").setNumber(50);
-}
-{runtimeScene.getScene().getVariables().getFromIndex(2).getChild("LastExit").setString(gdjs.evtTools.firebaseTools.firestore.getServerTimestamp());
-}
 {gdjs.evtTools.firebaseTools.firestore.writeDocument("Players", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), runtimeScene.getScene().getVariables().getFromIndex(2), runtimeScene.getScene().getVariables().getFromIndex(3));
+}
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "внутренний двор", false);
 }
 {for(var i = 0, len = gdjs._1089_1090_1072_1088_1090_32_1089_1090_1088_1072_1085_1080_1094_1072Code.GDErrorTextObjects1.length ;i < len;++i) {
     gdjs._1089_1090_1072_1088_1090_32_1089_1090_1088_1072_1085_1080_1094_1072Code.GDErrorTextObjects1[i].getBehavior("Text").setText("Данные сохранены");
 }
+}
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(5).getAsString() == "ok");
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getScene().getVariables().getFromIndex(4).getAsBoolean();
+}
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "внутренний двор", false);
 }
 }
 
