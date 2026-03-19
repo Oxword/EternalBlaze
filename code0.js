@@ -181,6 +181,11 @@ isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs._1089_1090_1072_1088_1090_32_1089_1090_1088_1072_1085_1080_1094_1072Code.mapOfGDgdjs_9546_95951089_95951090_95951072_95951088_95951090_959532_95951089_95951090_95951088_95951072_95951085_95951080_95951094_95951072Code_9546GDplayObjects1Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(14841580);
+}
+}
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("InputEmail"), gdjs._1089_1090_1072_1088_1090_32_1089_1090_1088_1072_1085_1080_1094_1072Code.GDInputEmailObjects1);
