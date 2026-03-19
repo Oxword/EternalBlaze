@@ -15,13 +15,13 @@ gdjs._1075_1072_1088_1077_1084Code.GDback2Objects2= [];
 
 gdjs._1075_1072_1088_1077_1084Code.mapOfGDgdjs_9546_95951075_95951072_95951088_95951077_95951084Code_9546GDkursorObjects1Objects = Hashtable.newFrom({"kursor": gdjs._1075_1072_1088_1077_1084Code.GDkursorObjects1});
 gdjs._1075_1072_1088_1077_1084Code.mapOfGDgdjs_9546_95951075_95951072_95951088_95951077_95951084Code_9546GDback2Objects1Objects = Hashtable.newFrom({"back2": gdjs._1075_1072_1088_1077_1084Code.GDback2Objects1});
-gdjs._1075_1072_1088_1077_1084Code.asyncCallback15136884 = function (runtimeScene, asyncObjectsList) {
+gdjs._1075_1072_1088_1077_1084Code.asyncCallback15153436 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs._1075_1072_1088_1077_1084Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "внутренний двор", false);
 }
 gdjs._1075_1072_1088_1077_1084Code.localVariables.length = 0;
 }
-gdjs._1075_1072_1088_1077_1084Code.idToCallbackMap.set(15136884, gdjs._1075_1072_1088_1077_1084Code.asyncCallback15136884);
+gdjs._1075_1072_1088_1077_1084Code.idToCallbackMap.set(15153436, gdjs._1075_1072_1088_1077_1084Code.asyncCallback15153436);
 gdjs._1075_1072_1088_1077_1084Code.eventsList0 = function(runtimeScene) {
 
 {
@@ -31,7 +31,7 @@ gdjs._1075_1072_1088_1077_1084Code.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs._1075_1072_1088_1077_1084Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs._1075_1072_1088_1077_1084Code.asyncCallback15136884(runtimeScene, asyncObjectsList)), 15136884, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs._1075_1072_1088_1077_1084Code.asyncCallback15153436(runtimeScene, asyncObjectsList)), 15153436, asyncObjectsList);
 }
 }
 
@@ -68,7 +68,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs._1075_1072_1088_1077_1084Code.mapOfGDgdjs_9546_95951075_95951072_95951088_95951077_95951084Code_9546GDkursorObjects1Objects, gdjs._1075_1072_1088_1077_1084Code.mapOfGDgdjs_9546_95951075_95951072_95951088_95951077_95951084Code_9546GDback2Objects1Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15136812);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15153364);
 }
 }
 }
