@@ -11,6 +11,8 @@ gdjs._1076_1074_1086_1088_1077_1094Code.GDText_9595TimerObjects1= [];
 gdjs._1076_1074_1086_1088_1077_1094Code.GDText_9595TimerObjects2= [];
 gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects1= [];
 gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects2= [];
+gdjs._1076_1074_1086_1088_1077_1094Code.GDtestObjects1= [];
+gdjs._1076_1074_1086_1088_1077_1094Code.GDtestObjects2= [];
 gdjs._1076_1074_1086_1088_1077_1094Code.GDText_9595GoldObjects1= [];
 gdjs._1076_1074_1086_1088_1077_1094Code.GDText_9595GoldObjects2= [];
 gdjs._1076_1074_1086_1088_1077_1094Code.GDback2Objects1= [];
@@ -224,7 +226,7 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.firebaseTools.firestore.writeDocument("Players", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), runtimeScene.getScene().getVariables().getFromIndex(2), runtimeScene.getScene().getVariables().getFromIndex(1));
 }
 {for(var i = 0, len = gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects1.length ;i < len;++i) {
-    gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects1[i].getBehavior("Scale").setScale(0.30);
+    gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects1[i].getBehavior("Scale").setScale(0.96);
 }
 }
 }
@@ -241,7 +243,7 @@ isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Lef
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("sbor"), gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects1);
 {for(var i = 0, len = gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects1.length ;i < len;++i) {
-    gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects1[i].getBehavior("Scale").setScale(0.35);
+    gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects1[i].getBehavior("Scale").setScale(1);
 }
 }
 }
@@ -264,6 +266,8 @@ gdjs._1076_1074_1086_1088_1077_1094Code.GDText_9595TimerObjects1.length = 0;
 gdjs._1076_1074_1086_1088_1077_1094Code.GDText_9595TimerObjects2.length = 0;
 gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects1.length = 0;
 gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects2.length = 0;
+gdjs._1076_1074_1086_1088_1077_1094Code.GDtestObjects1.length = 0;
+gdjs._1076_1074_1086_1088_1077_1094Code.GDtestObjects2.length = 0;
 gdjs._1076_1074_1086_1088_1077_1094Code.GDText_9595GoldObjects1.length = 0;
 gdjs._1076_1074_1086_1088_1077_1094Code.GDText_9595GoldObjects2.length = 0;
 gdjs._1076_1074_1086_1088_1077_1094Code.GDback2Objects1.length = 0;
@@ -282,6 +286,8 @@ gdjs._1076_1074_1086_1088_1077_1094Code.GDText_9595TimerObjects1.length = 0;
 gdjs._1076_1074_1086_1088_1077_1094Code.GDText_9595TimerObjects2.length = 0;
 gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects1.length = 0;
 gdjs._1076_1074_1086_1088_1077_1094Code.GDsborObjects2.length = 0;
+gdjs._1076_1074_1086_1088_1077_1094Code.GDtestObjects1.length = 0;
+gdjs._1076_1074_1086_1088_1077_1094Code.GDtestObjects2.length = 0;
 gdjs._1076_1074_1086_1088_1077_1094Code.GDText_9595GoldObjects1.length = 0;
 gdjs._1076_1074_1086_1088_1077_1094Code.GDText_9595GoldObjects2.length = 0;
 gdjs._1076_1074_1086_1088_1077_1094Code.GDback2Objects1.length = 0;
