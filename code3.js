@@ -97,7 +97,7 @@ isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs._1075_1072_1088_1077
 if (isConditionTrue_0) {
 /* Reuse gdjs._1075_1072_1088_1077_1084Code.GDback2Objects1 */
 {for(var i = 0, len = gdjs._1075_1072_1088_1077_1084Code.GDback2Objects1.length ;i < len;++i) {
-    gdjs._1075_1072_1088_1077_1084Code.GDback2Objects1[i].getBehavior("Scale").setScale(1);
+    gdjs._1075_1072_1088_1077_1084Code.GDback2Objects1[i].getBehavior("Scale").setScale(0.73);
 }
 }
 }
@@ -114,7 +114,7 @@ isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Lef
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("back2"), gdjs._1075_1072_1088_1077_1084Code.GDback2Objects1);
 {for(var i = 0, len = gdjs._1075_1072_1088_1077_1084Code.GDback2Objects1.length ;i < len;++i) {
-    gdjs._1075_1072_1088_1077_1084Code.GDback2Objects1[i].getBehavior("Scale").setScale(0.95);
+    gdjs._1075_1072_1088_1077_1084Code.GDback2Objects1[i].getBehavior("Scale").setScale(0.78);
 }
 }
 }
