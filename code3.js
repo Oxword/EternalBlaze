@@ -19,13 +19,13 @@ gdjs._1075_1072_1088_1077_1084Code.GDGlobalGoldObjects2= [];
 
 gdjs._1075_1072_1088_1077_1084Code.mapOfGDgdjs_9546_95951075_95951072_95951088_95951077_95951084Code_9546GDkursorObjects1Objects = Hashtable.newFrom({"kursor": gdjs._1075_1072_1088_1077_1084Code.GDkursorObjects1});
 gdjs._1075_1072_1088_1077_1084Code.mapOfGDgdjs_9546_95951075_95951072_95951088_95951077_95951084Code_9546GDback2Objects1Objects = Hashtable.newFrom({"back2": gdjs._1075_1072_1088_1077_1084Code.GDback2Objects1});
-gdjs._1075_1072_1088_1077_1084Code.asyncCallback15290932 = function (runtimeScene, asyncObjectsList) {
+gdjs._1075_1072_1088_1077_1084Code.asyncCallback12944908 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs._1075_1072_1088_1077_1084Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "внутренний двор", false);
 }
 gdjs._1075_1072_1088_1077_1084Code.localVariables.length = 0;
 }
-gdjs._1075_1072_1088_1077_1084Code.idToCallbackMap.set(15290932, gdjs._1075_1072_1088_1077_1084Code.asyncCallback15290932);
+gdjs._1075_1072_1088_1077_1084Code.idToCallbackMap.set(12944908, gdjs._1075_1072_1088_1077_1084Code.asyncCallback12944908);
 gdjs._1075_1072_1088_1077_1084Code.eventsList0 = function(runtimeScene) {
 
 {
@@ -35,7 +35,7 @@ gdjs._1075_1072_1088_1077_1084Code.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs._1075_1072_1088_1077_1084Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs._1075_1072_1088_1077_1084Code.asyncCallback15290932(runtimeScene, asyncObjectsList)), 15290932, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.10), (runtimeScene) => (gdjs._1075_1072_1088_1077_1084Code.asyncCallback12944908(runtimeScene, asyncObjectsList)), 12944908, asyncObjectsList);
 }
 }
 
@@ -78,6 +78,8 @@ isConditionTrue_0 = false;
 }
 }
 if (isConditionTrue_0) {
+{gdjs.evtTools.firebaseTools.firestore.writeDocument("Players", gdjs.evtTools.firebaseTools.auth.userManagement.getUID(), runtimeScene.getScene().getVariables().getFromIndex(0), runtimeScene.getScene().getVariables().getFromIndex(1));
+}
 
 { //Subevents
 gdjs._1075_1072_1088_1077_1084Code.eventsList0(runtimeScene);} //End of subevents
@@ -147,7 +149,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("GlobalGold"), gdjs._1075_1072_1088_1077_1084Code.GDGlobalGoldObjects1);
 {for(var i = 0, len = gdjs._1075_1072_1088_1077_1084Code.GDGlobalGoldObjects1.length ;i < len;++i) {
-    gdjs._1075_1072_1088_1077_1084Code.GDGlobalGoldObjects1[i].getBehavior("Text").setText(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(6)));
+    gdjs._1075_1072_1088_1077_1084Code.GDGlobalGoldObjects1[i].getBehavior("Text").setText(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(4)));
 }
 }
 }
@@ -206,7 +208,7 @@ isConditionTrue_0 = false;
 {isConditionTrue_0 = (runtimeScene.getScene().getVariables().getFromIndex(1).getAsString() == "ok");
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0).getChild("Gold")));
+{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0).getChild("Gold")));
 }
 }
 
