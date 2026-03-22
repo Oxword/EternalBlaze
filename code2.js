@@ -73,7 +73,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 {runtimeScene.getScene().getVariables().getFromIndex(3).getChild("LastCollectionTime").setNumber(gdjs.evtTools.runtimeScene.getTime(runtimeScene, "timestamp") / 1000);
 }
-{runtimeScene.getScene().getVariables().getFromIndex(3).getChild("RewardCooldownEnd").setNumber((gdjs.evtTools.runtimeScene.getTime(runtimeScene, "timestamp") / 1000) + 40);
+{runtimeScene.getScene().getVariables().getFromIndex(3).getChild("RewardCooldownEnd").setNumber((gdjs.evtTools.runtimeScene.getTime(runtimeScene, "timestamp") / 1000) + 140);
 }
 {runtimeScene.getScene().getVariables().getFromIndex(3).getChild("Gold").add(100);
 }
